@@ -12,3 +12,5 @@ git clone git@github.com:guzz/machathon-main-api.git
 cd machathon-main-api
 yarn
 cd ..
+
+yarn
