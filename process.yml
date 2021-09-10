@@ -5,7 +5,7 @@ deploy:
       - 52.23.163.185
     ref: origin/main
     repo: git@github.com:renatodelpupo/ipe-bot.git
-    path: /var/www/
+    path: /var/www/ipe-bot/
     post-deploy: yarn && pm2 start index.js
     env:
       NODE_ENV: production
