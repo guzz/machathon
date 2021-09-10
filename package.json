@@ -1,0 +1,18 @@
+{
+  "name": "machathon-project",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:chat": "cd chat-interface && yarn dev",
+    "dev:auth": "cd machathon-auth-notify && yarn dev",
+    "dev:main": "cd machathon-main-api && yarn dev",
+    "dev:be": "run-p dev:auth dev:main",
+    "dev": "run-p dev:chat dev:auth dev:main"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
