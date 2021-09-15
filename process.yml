@@ -6,6 +6,6 @@ deploy:
     ref: origin/main
     repo: git@github.com:renatodelpupo/ipe-bot.git
     path: /var/www/ipe-bot/
-    post-deploy: yarn && pm2 start index.js
+    post-deploy: yarn && pm2 start index.js --watch
     env:
       NODE_ENV: production
